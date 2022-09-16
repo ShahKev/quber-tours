@@ -10088,3 +10088,7 @@ textarea.form-control {
     .paragraph{
       text-align: right!important;
     }
+
+    #right-col-details{
+      align-items: center;
+    }
