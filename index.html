@@ -22,9 +22,46 @@
       #myBtn:hover {
         background-color: #555;
       }
+
+      /* slider */
+      .simple-ss {
+        width: fit-content;
+        height: 250px;
+        background-color: #eeeeee;
+        margin: auto;
+        background-image: url("images/destination-12.jpg");
+        animation-name: slide;
+        animation-duration: 10s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+      }
+      @keyframes slide {
+        0% {
+          background-position: 0 0;
+        }
+        16.66% {
+          background-position: 0 0;
+        }
+        33.32% {
+          background-position: -800px 0;
+        }
+        49.98% {
+          background-position: -800px 0;
+        }
+        66.64% {
+          background-position: -1600px 0;
+        }
+        83.30% {
+          background-position: -1600px 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
     </style>
     <title>Quber Tours - Home</title>
-    <link rel="shortcut icon" href="images/quber-tours.jpg" />
+    <link rel="shortcut icon" href="images/quber-tours.png" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -68,7 +105,7 @@
     >
       <div class="container">
         <img
-          src="images/quber-tours.jpg"
+          src="images/quber-tours.png"
           alt=""
           height="50px"
           width="50px"
@@ -114,9 +151,11 @@
     </nav>
     <!-- END nav -->
 
+    <!-- slider -->
+    <!-- <div class="simple-ss"></div> -->
     <div
       class="hero-wrap js-fullheight"
-      style="background-image: url('images/bg_5.jpg')"
+      style="background-image: url('images/bg_4.jpg')"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -125,19 +164,15 @@
           data-scrollax-parent="true"
         >
           <div class="col-md-7 ftco-animate">
-            <span class="subheading">Welcome to Quber Tours</span>
+            <span class="subheading" style="font-size: 70px"
+              >Welcome to Quber Tours</span
+            >
             <h1 class="mb-4">Start Dream Travel With Us</h1>
             <p class="caps">
               Travel to the any corner of India or the world without going
               around in circles.
             </p>
           </div>
-          <!-- <a
-            href="https://vimeo.com/45830194"
-            class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4"
-          >
-            <span class="fa fa-play"></span>
-          </a> -->
         </div>
       </div>
     </div>
@@ -305,7 +340,7 @@
       <div class="container">
         <div class="row d-flex">
           <div
-            class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center"
+            class="col-md-12 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center"
           >
             <div class="w-100">
               <span class="subheading">Welcome to Quber Tours</span>
@@ -324,14 +359,14 @@
                 assured that you can buy foreign exchange which are genuine and
                 which will help you enjoy your dream trip abroad.
               </p>
-              <p>
+              <!-- <p>
                 <a href="maps.google.com" class="btn btn-primary py-3 px-4"
                   >Search Destination</a
                 >
-              </p>
+              </p> -->
             </div>
           </div>
-          <div class="col-md-6">
+          <!-- <div class="col-md-6">
             <div class="row">
               <div
                 class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate"
@@ -424,12 +459,12 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
-    <section
+    <!-- <section
       class="ftco-section img ftco-select-destination"
       style="background-image: url(images/bg_3.jpg)"
     >
@@ -519,14 +554,174 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center pb-4">
           <div class="col-md-12 heading-section text-center ftco-animate">
-            <span class="subheading">As well as</span>
+            <span class="subheading">Quber Tours Provides </span>
             <h2 class="mb-4">Domestic Destinations</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="details1.html"
+                class="img"
+                style="background-image: url(images/destination-1.jpg)"
+              >
+                <!-- <span class="price">$550/person</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">11 Days Tour</span>
+                <h3><a href="#">Leh - Ladakh - Manali</a></h3>
+                <p class="location">
+                  <span class="fa fa-map-marker"></span> Keylong, Jispa, Sarchu,
+                  Leh
+                </p>
+                <ul>
+                  <li><span class="flaticon-shower"></span>2</li>
+                  <li><span class="flaticon-king-size"></span>3</li>
+                  <li><span class="flaticon-mountains"></span>Near Mountain</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="details2.html"
+                class="img"
+                style="background-image: url(images/destination-2.jpg)"
+              >
+                <!-- <span class="price">$550/person</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">9 Days Tour</span>
+                <h3><a href="#">Kashmir Valley</a></h3>
+                <p class="location">
+                  <span class="fa fa-map-marker"></span> Srinagar, Pehalgam,
+                  Sonmarg
+                </p>
+                <ul>
+                  <li><span class="flaticon-shower"></span>2</li>
+                  <li><span class="flaticon-king-size"></span>3</li>
+                  <li><span class="flaticon-mountains"></span>Near Mountain</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="details3.html"
+                class="img"
+                style="background-image: url(images/destination-3.jpg)"
+              >
+                <!-- <span class="price">$550/person</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">7 Days Tour</span>
+                <h3><a href="#">Spiti Valley</a></h3>
+                <p class="location">
+                  <span class="fa fa-map-marker"></span> Shimla, Chitkul, Kaza,
+                  Pin Valley
+                </p>
+                <ul>
+                  <li><span class="flaticon-shower"></span>2</li>
+                  <li><span class="flaticon-king-size"></span>3</li>
+                  <li><span class="flaticon-mountains"></span>Near Mountain</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="details4.html"
+                class="img"
+                style="background-image: url(images/destination-4.jpg)"
+              >
+                <!-- <span class="price">$550/person</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">11 Days Tours</span>
+                <h3><a href="#">Himachal Pradesh</a></h3>
+                <p class="location">
+                  <span class="fa fa-map-marker">
+                    Agartala, Silchar, Aizawl
+                  </span>
+                </p>
+                <ul>
+                  <li><span class="flaticon-shower"></span>2</li>
+                  <li><span class="flaticon-king-size"></span>3</li>
+                  <li>
+                    <span class="flaticon-sun-umbrella"></span>Near Mountain
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/destination-6.jpg)"
+              >
+                <!-- <span class="price">$550/person</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">7 Days Tour</span>
+                <h3><a href="#">Goa</a></h3>
+                <p class="location">
+                  <span class="fa fa-map-marker"></span> Banaue, Ifugao,
+                  Philippines
+                </p>
+                <ul>
+                  <li><span class="flaticon-shower"></span>2</li>
+                  <li><span class="flaticon-king-size"></span>3</li>
+                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/destination-8.jpg)"
+              >
+                <!-- <span class="price">$550/person</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">7 Days Tour</span>
+                <h3><a href="#">Kedarnath</a></h3>
+                <p class="location">
+                  <span class="fa fa-map-marker"></span> Banaue, Ifugao,
+                  Philippines
+                </p>
+                <ul>
+                  <li><span class="flaticon-shower"></span>2</li>
+                  <li><span class="flaticon-king-size"></span>3</li>
+                  <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center pb-4">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <span class="subheading">As well as</span>
+            <h2 class="mb-4">International Destinations</h2>
           </div>
         </div>
         <div class="row">
@@ -725,11 +920,11 @@
                       texts. Separated they live in Bookmarksgrove right at the
                       coast of the Semantics, a large language ocean.
                     </p>
-                    <p>
+                    <!-- <p>
                       <a href="#" class="btn btn-primary"
                         >Book Your Destination</a
                       >
-                    </p>
+                    </p> -->
                   </div>
                 </div>
               </div>
@@ -1008,15 +1203,19 @@
             <div class="ftco-footer-widget pt-md-5 mb-4">
               <h2 class="ftco-heading-2">About</h2>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+                Quber Tours steps-in to ease your travel in every possible way.
+                With our passionate, dynamic and experienced team who have good
+                experience in the travel industry, we would to bring your travel
+                dreams into reality. We cater all types of Domestic &
+                International Package Tour Customization. The main aim of our
+                service to fullfill all the needs of client.
               </p>
               <ul
                 class="ftco-footer-social list-unstyled float-md-left float-lft"
               >
-                <li class="ftco-animate">
+                <!-- <li class="ftco-animate">
                   <a href="#"><span class="fa fa-twitter"></span></a>
-                </li>
+                </li> -->
                 <li class="ftco-animate">
                   <a href="#"><span class="fa fa-facebook"></span></a>
                 </li>
@@ -1034,7 +1233,10 @@
                 <ul>
                   <li>
                     <span class="icon fa fa-map-marker"></span
-                    ><span class="text">Address Goes Here</span>
+                    ><span class="text"
+                      >71 Navi Peth, LBS Road, Ganjavewadi, Near Sai Sagar
+                      Hotel, Pune - 411030</span
+                    >
                   </li>
                   <li>
                     <a href="#"
